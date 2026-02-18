@@ -268,7 +268,7 @@ class AuthController extends Controller
                 throw new \Exception('Gmail configuration failed: ' . $configResult['message']);
             }
 
-            $resetLink = 'http://localhost:3000/reset?email=' . urlencode($user->email) . '&token=' . $token;
+            $resetLink = 'https://taqrir.vercel.app/reset?email=' . urlencode($user->email) . '&token=' . $token;
             Log::info('[FORGOT PASSWORD] Reset link created', ['link' => $resetLink]);
 
             // Check if email template exists
