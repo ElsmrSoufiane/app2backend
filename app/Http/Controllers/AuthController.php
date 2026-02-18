@@ -248,7 +248,7 @@ class AuthController extends Controller
             if ($this->config['dev_mode']) {
                 Log::info('[FORGOT PASSWORD] Dev mode ON - returning token');
                 
-                $resetLink = 'http://localhost:3000/reset?email=' . urlencode($user->email) . '&token=' . $token;
+                $resetLink = 'https://taqrir.vercel.app/reset?email=' . urlencode($user->email) . '&token=' . $token;
                 
                 return $this->addCorsHeaders(response()->json([
                     'success' => true, 

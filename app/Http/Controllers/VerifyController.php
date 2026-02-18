@@ -13,7 +13,7 @@ class VerifyController extends Controller
 {
     private $config = [
         'dev_mode' => false,
-        'frontend_url' => 'http://localhost:3000',
+        'frontend_url' => 'https://taqrir.vercel.app',
         'gmail' => [
             'username' => 'eemssoufiane@gmail.com',
             'password' => 'hmjdcatkbgledfhl',
