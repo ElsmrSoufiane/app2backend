@@ -86,7 +86,7 @@ class AuthController extends Controller
         try {
             $data = $request->validate([
                 'name' => 'required|string|max:120',
-                'email' => 'required|email|unique:users,email',
+                'email' => 'required|email|unique:userds,email',
                 'password' => 'required|string|min:' . $this->config['min_password_length'],
             ]);
 
